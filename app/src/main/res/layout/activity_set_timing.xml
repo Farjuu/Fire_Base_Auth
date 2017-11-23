@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bck"
+    tools:context="com.example.farjana.fire_base_auth.SetTimingAct">
+
+      <LinearLayout
+          android:layout_margin="10dp"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal">
+          <TextView
+              android:layout_margin="15dp"
+              android:id="@+id/txt1"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:gravity="center"
+              android:layout_weight="3"
+              android:text="Set Time : "
+              android:textStyle="bold|italic"
+              android:textColorHighlight="@android:color/holo_purple"
+              android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title" />
+
+          <Spinner
+              android:id="@+id/spinnerTime"
+              android:layout_margin="15dp"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:textColorHighlight="@android:color/holo_purple"
+              android:entries="@array/time" />
+      </LinearLayout>
+
+        <Button
+            android:layout_margin="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_done"
+            android:text="Done"
+            />
+
+
+</LinearLayout>
